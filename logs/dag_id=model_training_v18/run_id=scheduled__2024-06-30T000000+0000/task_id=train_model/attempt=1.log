@@ -1,0 +1,37 @@
+[2024-07-01T01:52:44.851+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T01:52:44.864+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v18.train_model scheduled__2024-06-30T00:00:00+00:00 [queued]>
+[2024-07-01T01:52:44.869+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v18.train_model scheduled__2024-06-30T00:00:00+00:00 [queued]>
+[2024-07-01T01:52:44.870+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-01T01:52:44.878+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_model> on 2024-06-30 00:00:00+00:00
+[2024-07-01T01:52:44.885+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=562) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-01T01:52:44.886+0000] {standard_task_runner.py:63} INFO - Started process 584 to run task
+[2024-07-01T01:52:44.885+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v18', 'train_model', 'scheduled__2024-06-30T00:00:00+00:00', '--job-id', '745', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmp1x9qq2k9']
+[2024-07-01T01:52:44.887+0000] {standard_task_runner.py:91} INFO - Job 745: Subtask train_model
+[2024-07-01T01:52:44.919+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v18.train_model scheduled__2024-06-30T00:00:00+00:00 [running]> on host 1eca8603f04b
+[2024-07-01T01:52:44.970+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v18' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-06-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-30T00:00:00+00:00'
+[2024-07-01T01:52:44.971+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T01:52:44.987+0000] {logging_mixin.py:188} WARNING - 2024/07/01 01:52:44 INFO mlflow.tracking.fluent: Experiment with name 'my-experiment' does not exist. Creating a new experiment.
+[2024-07-01T01:52:45.022+0000] {logging_mixin.py:188} WARNING - 2024/07/01 01:52:45 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2024-07-01T01:52:47.735+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T01:52:47.736+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T01:52:47.742+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=model_training_v18, task_id=train_model, run_id=scheduled__2024-06-30T00:00:00+00:00, execution_date=20240630T000000, start_date=20240701T015244, end_date=20240701T015247
+[2024-07-01T01:52:47.786+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T01:52:47.796+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T01:52:47.799+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

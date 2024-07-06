@@ -1,0 +1,26 @@
+[2024-07-06T00:11:23.115+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-06T00:11:23.128+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v23.create_bucket scheduled__2024-07-05T00:00:00+00:00 [queued]>
+[2024-07-06T00:11:23.132+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v23.create_bucket scheduled__2024-07-05T00:00:00+00:00 [queued]>
+[2024-07-06T00:11:23.133+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-06T00:11:23.142+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): create_bucket> on 2024-07-05 00:00:00+00:00
+[2024-07-06T00:11:23.147+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3775) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-06T00:11:23.148+0000] {standard_task_runner.py:63} INFO - Started process 3815 to run task
+[2024-07-06T00:11:23.148+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v23', 'create_bucket', 'scheduled__2024-07-05T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmppzs_chtk']
+[2024-07-06T00:11:23.149+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask create_bucket
+[2024-07-06T00:11:23.181+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v23.create_bucket scheduled__2024-07-05T00:00:00+00:00 [running]> on host a86c24b38e22
+[2024-07-06T00:11:23.233+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v23' AIRFLOW_CTX_TASK_ID='create_bucket' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-05T00:00:00+00:00'
+[2024-07-06T00:11:23.234+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-06T00:11:23.244+0000] {connectionpool.py:874} WARNING - Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8f7e9628a0>: Failed to establish a new connection: [Errno 111] Connection refused')': /my-bucket
+[2024-07-06T00:11:23.646+0000] {connectionpool.py:874} WARNING - Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8f7e962a50>: Failed to establish a new connection: [Errno 111] Connection refused')': /my-bucket
+[2024-07-06T00:11:24.447+0000] {connectionpool.py:874} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8f7e962d80>: Failed to establish a new connection: [Errno 111] Connection refused')': /my-bucket
+[2024-07-06T00:11:26.048+0000] {connectionpool.py:874} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8f7e9631d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /my-bucket
+[2024-07-06T00:11:29.249+0000] {connectionpool.py:874} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8f7e963410>: Failed to establish a new connection: [Errno 111] Connection refused')': /my-bucket
+[2024-07-06T00:11:29.251+0000] {logging_mixin.py:188} INFO - Ошибка при создании bucket 'my-bucket': HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /my-bucket (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8f7e963830>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-07-06T00:11:29.251+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-06T00:11:29.251+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-06T00:11:29.259+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=model_training_v23, task_id=create_bucket, run_id=scheduled__2024-07-05T00:00:00+00:00, execution_date=20240705T000000, start_date=20240706T001123, end_date=20240706T001129
+[2024-07-06T00:11:29.292+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-06T00:11:29.301+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-06T00:11:29.304+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

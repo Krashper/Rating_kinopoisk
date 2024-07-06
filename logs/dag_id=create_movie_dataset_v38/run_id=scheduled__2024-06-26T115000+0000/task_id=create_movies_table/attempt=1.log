@@ -1,0 +1,96 @@
+[2024-06-26T12:00:22.842+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-26T12:00:22.857+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_movie_dataset_v38.create_movies_table scheduled__2024-06-26T11:50:00+00:00 [queued]>
+[2024-06-26T12:00:22.864+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_movie_dataset_v38.create_movies_table scheduled__2024-06-26T11:50:00+00:00 [queued]>
+[2024-06-26T12:00:22.876+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-26T12:00:22.905+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): create_movies_table> on 2024-06-26 11:50:00+00:00
+[2024-06-26T12:00:22.910+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=79) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-26T12:00:22.911+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'create_movie_dataset_v38', 'create_movies_table', 'scheduled__2024-06-26T11:50:00+00:00', '--job-id', '236', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpvavh_43p']
+[2024-06-26T12:00:22.917+0000] {standard_task_runner.py:63} INFO - Started process 81 to run task
+[2024-06-26T12:00:22.920+0000] {standard_task_runner.py:91} INFO - Job 236: Subtask create_movies_table
+[2024-06-26T12:00:22.981+0000] {task_command.py:426} INFO - Running <TaskInstance: create_movie_dataset_v38.create_movies_table scheduled__2024-06-26T11:50:00+00:00 [running]> on host ad6ccfebc5a6
+[2024-06-26T12:00:23.055+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='create_movie_dataset_v38' AIRFLOW_CTX_TASK_ID='create_movies_table' AIRFLOW_CTX_EXECUTION_DATE='2024-06-26T11:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-26T11:50:00+00:00'
+[2024-06-26T12:00:23.056+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-26T12:00:23.062+0000] {sql.py:276} INFO - Executing: CREATE TABLE IF NOT EXISTS movies (
+            id SERIAL PRIMARY KEY,
+            name VARCHAR,
+            description VARCHAR,
+            year INTEGER,
+            rating FLOAT,
+            votes INTEGER,
+            movie_length INTEGER,
+            age_rating VARCHAR,
+            genres VARCHAR,
+            countries VARCHAR
+        )
+[2024-06-26T12:00:23.069+0000] {base.py:84} INFO - Using connection ID 'postgres' for task execution.
+[2024-06-26T12:00:23.074+0000] {base.py:84} INFO - Using connection ID 'postgres' for task execution.
+[2024-06-26T12:00:23.129+0000] {sql.py:470} INFO - Running statement: CREATE TABLE IF NOT EXISTS movies (
+            id SERIAL PRIMARY KEY,
+            name VARCHAR,
+            description VARCHAR,
+            year INTEGER,
+            rating FLOAT,
+            votes INTEGER,
+            movie_length INTEGER,
+            age_rating VARCHAR,
+            genres VARCHAR,
+            countries VARCHAR
+        ), parameters: None
+[2024-06-26T12:00:23.136+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-26T12:00:23.142+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=create_movie_dataset_v38, task_id=create_movies_table, run_id=scheduled__2024-06-26T11:50:00+00:00, execution_date=20240626T115000, start_date=20240626T120022, end_date=20240626T120023
+[2024-06-26T12:00:23.174+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-26T12:00:23.187+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py:1296: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-06-26T12:00:23.193+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-26T12:00:23.196+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-26T12:04:53.644+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-26T12:04:53.658+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_movie_dataset_v38.create_movies_table scheduled__2024-06-26T11:50:00+00:00 [queued]>
+[2024-06-26T12:04:53.663+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_movie_dataset_v38.create_movies_table scheduled__2024-06-26T11:50:00+00:00 [queued]>
+[2024-06-26T12:04:53.664+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-26T12:04:53.673+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): create_movies_table> on 2024-06-26 11:50:00+00:00
+[2024-06-26T12:04:53.677+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=153) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-26T12:04:53.678+0000] {standard_task_runner.py:63} INFO - Started process 155 to run task
+[2024-06-26T12:04:53.678+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'create_movie_dataset_v38', 'create_movies_table', 'scheduled__2024-06-26T11:50:00+00:00', '--job-id', '241', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmp2xoqriv7']
+[2024-06-26T12:04:53.681+0000] {standard_task_runner.py:91} INFO - Job 241: Subtask create_movies_table
+[2024-06-26T12:04:53.709+0000] {task_command.py:426} INFO - Running <TaskInstance: create_movie_dataset_v38.create_movies_table scheduled__2024-06-26T11:50:00+00:00 [running]> on host 36c0809852d0
+[2024-06-26T12:04:53.764+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='create_movie_dataset_v38' AIRFLOW_CTX_TASK_ID='create_movies_table' AIRFLOW_CTX_EXECUTION_DATE='2024-06-26T11:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-26T11:50:00+00:00'
+[2024-06-26T12:04:53.765+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-26T12:04:53.773+0000] {sql.py:276} INFO - Executing: CREATE TABLE IF NOT EXISTS movies (
+            id SERIAL PRIMARY KEY,
+            name VARCHAR,
+            description VARCHAR,
+            year INTEGER,
+            rating FLOAT,
+            votes INTEGER,
+            movie_length INTEGER,
+            age_rating VARCHAR,
+            genres VARCHAR,
+            countries VARCHAR
+        )
+[2024-06-26T12:04:53.780+0000] {base.py:84} INFO - Using connection ID 'postgres' for task execution.
+[2024-06-26T12:04:53.787+0000] {base.py:84} INFO - Using connection ID 'postgres' for task execution.
+[2024-06-26T12:04:53.825+0000] {sql.py:470} INFO - Running statement: CREATE TABLE IF NOT EXISTS movies (
+            id SERIAL PRIMARY KEY,
+            name VARCHAR,
+            description VARCHAR,
+            year INTEGER,
+            rating FLOAT,
+            votes INTEGER,
+            movie_length INTEGER,
+            age_rating VARCHAR,
+            genres VARCHAR,
+            countries VARCHAR
+        ), parameters: None
+[2024-06-26T12:04:53.843+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-26T12:04:53.850+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=create_movie_dataset_v38, task_id=create_movies_table, run_id=scheduled__2024-06-26T11:50:00+00:00, execution_date=20240626T115000, start_date=20240626T120453, end_date=20240626T120453
+[2024-06-26T12:04:53.892+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-26T12:04:53.900+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py:1296: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-06-26T12:04:53.909+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-26T12:04:53.911+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

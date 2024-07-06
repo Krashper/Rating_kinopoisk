@@ -1,0 +1,63 @@
+[2024-07-02T01:23:32.569+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/etl.py
+[2024-07-02T01:23:32.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2024-07-02T01:23:32.572+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:23:32.571+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2024-07-02T01:23:33.586+0000] {logging_mixin.py:188} INFO -           id                        name  ...           genres       countries
+0     336535       WWF Королевская битва  ...            спорт             США
+1     521497  Жиль Жакоб, гражданин Канн  ...   документальный         Франция
+2     301065                     Дракула  ...      ужасы|драма  Великобритания
+3     471835                 Любовь одна  ...  драма|мелодрама  Россия|Украина
+4     806510                     Везучая  ...        мелодрама          Россия
+..       ...                         ...  ...              ...             ...
+195   623424                Предсказание  ...        мелодрама          Россия
+196  1196962                   Дама треф  ...         детектив          Россия
+197   295383       Женщины против мужчин  ...          комедия             США
+198   328731         WWF Полная загрузка  ...            спорт             США
+199    94563         100 дней в джунглях  ...            драма          Канада
+
+[200 rows x 10 columns]
+[2024-07-02T01:23:33.597+0000] {processor.py:840} INFO - DAG(s) 'create_movie_dataset_v41' retrieved from /opt/airflow/dags/etl.py
+[2024-07-02T01:23:33.614+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:23:33.612+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-02T01:23:33.628+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:23:33.628+0000] {dag.py:3954} INFO - Setting next_dagrun for create_movie_dataset_v41 to 2024-07-02 01:20:00+00:00, run_after=2024-07-02 01:30:00+00:00
+[2024-07-02T01:23:33.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 1.080 seconds
+[2024-07-02T01:24:03.887+0000] {processor.py:161} INFO - Started process (PID=98) to work on /opt/airflow/dags/etl.py
+[2024-07-02T01:24:03.887+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2024-07-02T01:24:03.888+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:24:03.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2024-07-02T01:24:04.206+0000] {logging_mixin.py:188} INFO -           id  ...          countries
+0      94563  ...             Канада
+1     447098  ...    Германия|Канада
+2     418878  ...            Франция
+3     276127  ...                США
+4     568587  ...  Франция|Швейцария
+..       ...  ...                ...
+195    89685  ...     Великобритания
+196   479717  ...                США
+197   522457  ...                США
+198  1212024  ...         Канада|США
+199    94803  ...                США
+
+[200 rows x 10 columns]
+[2024-07-02T01:24:04.215+0000] {processor.py:840} INFO - DAG(s) 'create_movie_dataset_v41' retrieved from /opt/airflow/dags/etl.py
+[2024-07-02T01:24:04.341+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:24:04.341+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-02T01:24:04.354+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:24:04.354+0000] {dag.py:3954} INFO - Setting next_dagrun for create_movie_dataset_v41 to 2024-07-02 01:20:00+00:00, run_after=2024-07-02 01:30:00+00:00
+[2024-07-02T01:24:04.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 0.484 seconds
+[2024-07-02T01:24:35.149+0000] {processor.py:161} INFO - Started process (PID=145) to work on /opt/airflow/dags/etl.py
+[2024-07-02T01:24:35.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2024-07-02T01:24:35.152+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:24:35.152+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2024-07-02T01:24:35.515+0000] {logging_mixin.py:188} INFO -           id  ...          countries
+0      94563  ...             Канада
+1     447098  ...    Германия|Канада
+2     418878  ...            Франция
+3     276127  ...                США
+4     568587  ...  Франция|Швейцария
+..       ...  ...                ...
+195    89685  ...     Великобритания
+196   479717  ...                США
+197   522457  ...                США
+198  1212024  ...         Канада|США
+199    94803  ...                США
+
+[200 rows x 10 columns]
+[2024-07-02T01:24:35.525+0000] {processor.py:840} INFO - DAG(s) 'create_movie_dataset_v41' retrieved from /opt/airflow/dags/etl.py
+[2024-07-02T01:24:35.542+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:24:35.542+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-02T01:24:35.556+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:24:35.556+0000] {dag.py:3954} INFO - Setting next_dagrun for create_movie_dataset_v41 to 2024-07-02 01:20:00+00:00, run_after=2024-07-02 01:30:00+00:00
+[2024-07-02T01:24:35.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 0.426 seconds

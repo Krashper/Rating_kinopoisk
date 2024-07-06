@@ -1,0 +1,220 @@
+[2024-06-28T00:00:15.155+0000] {processor.py:161} INFO - Started process (PID=2336) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:00:15.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:00:15.156+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:00:15.156+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:00:15.163+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:00:15.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:00:45.208+0000] {processor.py:161} INFO - Started process (PID=2354) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:00:45.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:00:45.212+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:00:45.212+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:00:45.243+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:00:45.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.047 seconds
+[2024-06-28T00:01:15.768+0000] {processor.py:161} INFO - Started process (PID=2380) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:01:15.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:01:15.769+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:01:15.769+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:01:15.775+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:01:15.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:01:46.349+0000] {processor.py:161} INFO - Started process (PID=2399) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:01:46.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:01:46.350+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:01:46.350+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:01:46.357+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:01:46.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:02:16.936+0000] {processor.py:161} INFO - Started process (PID=2425) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:02:16.936+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:02:16.937+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:02:16.937+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:02:16.943+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:02:16.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:02:47.485+0000] {processor.py:161} INFO - Started process (PID=2451) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:02:47.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:02:47.486+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:02:47.486+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:02:47.494+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:02:47.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.021 seconds
+[2024-06-28T00:03:17.697+0000] {processor.py:161} INFO - Started process (PID=2470) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:03:17.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:03:17.699+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:03:17.698+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:03:17.707+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:03:17.715+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.021 seconds
+[2024-06-28T00:03:48.239+0000] {processor.py:161} INFO - Started process (PID=2495) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:03:48.241+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:03:48.241+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:03:48.241+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:03:48.248+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:03:48.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.021 seconds
+[2024-06-28T00:04:18.742+0000] {processor.py:161} INFO - Started process (PID=2521) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:04:18.745+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:04:18.746+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:04:18.745+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:04:18.753+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:04:18.761+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.022 seconds
+[2024-06-28T00:04:49.240+0000] {processor.py:161} INFO - Started process (PID=2540) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:04:49.241+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:04:49.241+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:04:49.241+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:04:49.251+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:04:49.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.023 seconds
+[2024-06-28T00:05:19.725+0000] {processor.py:161} INFO - Started process (PID=2566) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:05:19.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:05:19.726+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:05:19.726+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:05:19.733+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:05:19.743+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.022 seconds
+[2024-06-28T00:05:50.213+0000] {processor.py:161} INFO - Started process (PID=2592) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:05:50.214+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:05:50.215+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:05:50.215+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:05:50.224+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:05:50.233+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.023 seconds
+[2024-06-28T00:06:20.721+0000] {processor.py:161} INFO - Started process (PID=2611) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:06:20.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:06:20.722+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:06:20.722+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:06:20.729+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:06:20.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:06:51.221+0000] {processor.py:161} INFO - Started process (PID=2637) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:06:51.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:06:51.223+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:06:51.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:06:51.230+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:06:51.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:07:21.815+0000] {processor.py:161} INFO - Started process (PID=2656) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:07:21.816+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:07:21.816+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:07:21.816+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:07:21.854+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:07:21.863+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.051 seconds
+[2024-06-28T00:07:52.408+0000] {processor.py:161} INFO - Started process (PID=2681) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:07:52.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:07:52.409+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:07:52.409+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:07:52.416+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:07:52.424+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:08:22.932+0000] {processor.py:161} INFO - Started process (PID=2707) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:08:22.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:08:22.933+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:08:22.933+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:08:22.939+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:08:22.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:08:53.467+0000] {processor.py:161} INFO - Started process (PID=2726) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:08:53.468+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:08:53.468+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:08:53.468+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:08:53.475+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:08:53.483+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:09:24.193+0000] {processor.py:161} INFO - Started process (PID=2752) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:09:24.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:09:24.195+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:09:24.195+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:09:24.204+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:09:24.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.023 seconds
+[2024-06-28T00:09:54.473+0000] {processor.py:161} INFO - Started process (PID=2778) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:09:54.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:09:54.474+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:09:54.474+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:09:54.481+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:09:54.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:10:24.957+0000] {processor.py:161} INFO - Started process (PID=2801) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:10:24.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:10:24.959+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:10:24.959+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:10:24.968+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:10:24.976+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.022 seconds
+[2024-06-28T00:10:55.576+0000] {processor.py:161} INFO - Started process (PID=2825) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:10:55.576+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:10:55.577+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:10:55.577+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:10:55.583+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:10:55.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.018 seconds
+[2024-06-28T00:11:26.073+0000] {processor.py:161} INFO - Started process (PID=2851) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:11:26.074+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:11:26.074+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:11:26.074+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:11:26.081+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:11:26.089+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:11:56.561+0000] {processor.py:161} INFO - Started process (PID=2870) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:11:56.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:11:56.562+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:11:56.562+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:11:56.568+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:11:56.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.018 seconds
+[2024-06-28T00:12:27.143+0000] {processor.py:161} INFO - Started process (PID=2896) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:12:27.144+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:12:27.144+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:12:27.144+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:12:27.151+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:12:27.159+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:12:57.817+0000] {processor.py:161} INFO - Started process (PID=2922) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:12:57.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:12:57.818+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:12:57.818+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:12:57.824+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:12:57.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:13:28.334+0000] {processor.py:161} INFO - Started process (PID=2940) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:13:28.335+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:13:28.335+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:13:28.335+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:13:28.341+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:13:28.350+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:13:58.845+0000] {processor.py:161} INFO - Started process (PID=2966) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:13:58.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:13:58.846+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:13:58.846+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:13:58.852+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:13:58.861+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:14:29.363+0000] {processor.py:161} INFO - Started process (PID=2992) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:14:29.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:14:29.364+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:14:29.364+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:14:29.371+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:14:29.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.022 seconds
+[2024-06-28T00:14:59.867+0000] {processor.py:161} INFO - Started process (PID=3011) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:14:59.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:14:59.868+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:14:59.868+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:14:59.878+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:14:59.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.025 seconds
+[2024-06-28T00:15:30.407+0000] {processor.py:161} INFO - Started process (PID=3036) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:15:30.408+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:15:30.408+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:15:30.408+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:15:30.414+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:15:30.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:16:00.944+0000] {processor.py:161} INFO - Started process (PID=3062) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:16:00.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:16:00.946+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:16:00.946+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:16:00.953+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:16:00.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:16:31.807+0000] {processor.py:161} INFO - Started process (PID=3081) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:16:31.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:16:31.808+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:16:31.808+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:16:31.831+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:16:31.841+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.038 seconds
+[2024-06-28T00:17:02.249+0000] {processor.py:161} INFO - Started process (PID=3107) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:17:02.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:17:02.250+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:17:02.250+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:17:02.256+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:17:02.265+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:17:32.814+0000] {processor.py:161} INFO - Started process (PID=3134) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:17:32.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:17:32.815+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:17:32.815+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:17:32.822+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:17:32.831+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:18:03.441+0000] {processor.py:161} INFO - Started process (PID=3153) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:18:03.442+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:18:03.443+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:18:03.443+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:18:03.452+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:18:03.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.023 seconds
+[2024-06-28T00:18:33.986+0000] {processor.py:161} INFO - Started process (PID=3179) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:18:33.987+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:18:33.987+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:18:33.987+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:18:33.995+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:18:34.003+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:19:04.506+0000] {processor.py:161} INFO - Started process (PID=3205) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:19:04.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:19:04.507+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:19:04.507+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:19:04.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:19:04.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:19:34.975+0000] {processor.py:161} INFO - Started process (PID=3224) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:19:34.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:19:34.976+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:19:34.976+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:19:34.985+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:19:34.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.021 seconds
+[2024-06-28T00:20:05.496+0000] {processor.py:161} INFO - Started process (PID=3254) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:20:05.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:20:05.498+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:20:05.497+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:20:05.504+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:20:05.512+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.020 seconds
+[2024-06-28T00:20:36.074+0000] {processor.py:161} INFO - Started process (PID=3273) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:20:36.075+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:20:36.075+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:20:36.075+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:20:36.083+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:20:36.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds
+[2024-06-28T00:21:06.592+0000] {processor.py:161} INFO - Started process (PID=3299) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:21:06.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:21:06.593+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:21:06.593+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:21:06.601+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:21:06.609+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.021 seconds
+[2024-06-28T00:21:36.784+0000] {processor.py:161} INFO - Started process (PID=3325) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:21:36.784+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:21:36.785+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:21:36.785+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:21:36.791+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:21:36.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.018 seconds
+[2024-06-28T00:22:07.328+0000] {processor.py:161} INFO - Started process (PID=3343) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:22:07.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-06-28T00:22:07.329+0000] {logging_mixin.py:188} INFO - [2024-06-28T00:22:07.329+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:22:07.336+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-06-28T00:22:07.344+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.019 seconds

@@ -1,0 +1,309 @@
+[2024-06-27T23:47:50.618+0000] {processor.py:161} INFO - Started process (PID=1744) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:47:50.619+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:47:50.620+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:47:50.619+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:47:50.946+0000] {logging_mixin.py:188} INFO -           id  ...           countries
+0    2035288  ...              Россия
+1    4319755  ...              Россия
+2    4290768  ...              Россия
+3    1235222  ...     Россия|Беларусь
+4    1231381  ...         США|Мексика
+..       ...  ...                 ...
+195    95359  ...  Великобритания|США
+196   957688  ...                 США
+197   427908  ...              Россия
+198    44538  ...                СССР
+199  4992630  ...            Норвегия
+
+[200 rows x 10 columns]
+[2024-06-27T23:47:50.956+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:47:51.019+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:47:51.019+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:model_training_v1
+[2024-06-27T23:47:51.026+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:47:51.025+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:model_training_v1
+[2024-06-27T23:47:51.031+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:47:51.031+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:model_training_v1
+[2024-06-27T23:47:51.031+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:47:51.031+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:47:51.037+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:47:51.037+0000] {dag.py:3118} INFO - Creating ORM DAG for model_training_v1
+[2024-06-27T23:47:51.043+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:47:51.043+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-27 23:46:00+00:00, run_after=2024-06-27 23:47:00+00:00
+[2024-06-27T23:47:51.054+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.439 seconds
+[2024-06-27T23:48:21.094+0000] {processor.py:161} INFO - Started process (PID=1770) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:48:21.094+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:48:21.095+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:48:21.095+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:48:21.400+0000] {logging_mixin.py:188} INFO -           id  ...           countries
+0    2035288  ...              Россия
+1    4319755  ...              Россия
+2    4290768  ...              Россия
+3    1235222  ...     Россия|Беларусь
+4    1231381  ...         США|Мексика
+..       ...  ...                 ...
+195    95359  ...  Великобритания|США
+196   957688  ...                 США
+197   427908  ...              Россия
+198    44538  ...                СССР
+199  4992630  ...            Норвегия
+
+[200 rows x 10 columns]
+[2024-06-27T23:48:21.409+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:48:21.425+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:48:21.425+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:48:21.438+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:48:21.438+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-27 23:47:00+00:00, run_after=2024-06-27 23:48:00+00:00
+[2024-06-27T23:48:21.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.363 seconds
+[2024-06-27T23:48:51.650+0000] {processor.py:161} INFO - Started process (PID=1795) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:48:51.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:48:51.651+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:48:51.651+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:48:51.984+0000] {logging_mixin.py:188} INFO -           id  ...           countries
+0    2035288  ...              Россия
+1    4319755  ...              Россия
+2    4290768  ...              Россия
+3    1235222  ...     Россия|Беларусь
+4    1231381  ...         США|Мексика
+..       ...  ...                 ...
+195    95359  ...  Великобритания|США
+196   957688  ...                 США
+197   427908  ...              Россия
+198    44538  ...                СССР
+199  4992630  ...            Норвегия
+
+[200 rows x 10 columns]
+[2024-06-27T23:48:51.993+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:48:52.010+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:48:52.010+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:48:52.025+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:48:52.025+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-27 23:47:00+00:00, run_after=2024-06-27 23:48:00+00:00
+[2024-06-27T23:48:52.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.400 seconds
+[2024-06-27T23:49:22.191+0000] {processor.py:161} INFO - Started process (PID=1814) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:49:22.191+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:49:22.192+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:49:22.191+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:49:22.545+0000] {logging_mixin.py:188} INFO -           id  ...           countries
+0    2035288  ...              Россия
+1    4319755  ...              Россия
+2    4290768  ...              Россия
+3    1235222  ...     Россия|Беларусь
+4    1231381  ...         США|Мексика
+..       ...  ...                 ...
+195    95359  ...  Великобритания|США
+196   957688  ...                 США
+197   427908  ...              Россия
+198    44538  ...                СССР
+199  4992630  ...            Норвегия
+
+[200 rows x 10 columns]
+[2024-06-27T23:49:22.555+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:49:22.570+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:49:22.570+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:49:22.581+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:49:22.581+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-27 23:48:00+00:00, run_after=2024-06-27 23:49:00+00:00
+[2024-06-27T23:49:22.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.406 seconds
+[2024-06-27T23:49:52.948+0000] {processor.py:161} INFO - Started process (PID=1840) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:49:52.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:49:52.952+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:49:52.952+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:49:53.267+0000] {logging_mixin.py:188} INFO -           id  ...           countries
+0    2035288  ...              Россия
+1    4319755  ...              Россия
+2    4290768  ...              Россия
+3    1235222  ...     Россия|Беларусь
+4    1231381  ...         США|Мексика
+..       ...  ...                 ...
+195    95359  ...  Великобритания|США
+196   957688  ...                 США
+197   427908  ...              Россия
+198    44538  ...                СССР
+199  4992630  ...            Норвегия
+
+[200 rows x 10 columns]
+[2024-06-27T23:49:53.277+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:49:53.294+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:49:53.294+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:49:53.308+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:49:53.308+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-27 23:48:00+00:00, run_after=2024-06-27 23:49:00+00:00
+[2024-06-27T23:49:53.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.376 seconds
+[2024-06-27T23:50:00.355+0000] {processor.py:161} INFO - Started process (PID=1849) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:50:00.356+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:50:00.356+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:50:00.356+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:50:00.695+0000] {logging_mixin.py:188} INFO -           id  ...           countries
+0    2035288  ...              Россия
+1    4319755  ...              Россия
+2    4290768  ...              Россия
+3    1235222  ...     Россия|Беларусь
+4    1231381  ...         США|Мексика
+..       ...  ...                 ...
+195    95359  ...  Великобритания|США
+196   957688  ...                 США
+197   427908  ...              Россия
+198    44538  ...                СССР
+199  4992630  ...            Норвегия
+
+[200 rows x 10 columns]
+[2024-06-27T23:50:00.705+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:50:00.766+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:50:00.766+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:50:00.778+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:50:00.778+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:50:00.795+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.443 seconds
+[2024-06-27T23:50:31.003+0000] {processor.py:161} INFO - Started process (PID=1872) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:50:31.003+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:50:31.004+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:50:31.004+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:50:31.341+0000] {logging_mixin.py:188} INFO -           id  ...     countries
+0      42666  ...          СССР
+1     518363  ...           США
+2    1398890  ...        Россия
+3    1118008  ...      Беларусь
+4    5258563  ...        Канада
+..       ...  ...           ...
+195   684235  ...        Россия
+196    42495  ...          СССР
+197    42289  ...  Франция|СССР
+198  4725578  ...        Россия
+199  1431114  ...        Россия
+
+[200 rows x 10 columns]
+[2024-06-27T23:50:31.350+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:50:31.409+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:50:31.408+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:50:31.420+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:50:31.420+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:50:31.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.435 seconds
+[2024-06-27T23:51:01.631+0000] {processor.py:161} INFO - Started process (PID=1897) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:01.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:51:01.632+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:01.632+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:01.937+0000] {logging_mixin.py:188} INFO -           id  ...     countries
+0      42666  ...          СССР
+1     518363  ...           США
+2    1398890  ...        Россия
+3    1118008  ...      Беларусь
+4    5258563  ...        Канада
+..       ...  ...           ...
+195   684235  ...        Россия
+196    42495  ...          СССР
+197    42289  ...  Франция|СССР
+198  4725578  ...        Россия
+199  1431114  ...        Россия
+
+[200 rows x 10 columns]
+[2024-06-27T23:51:01.946+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:01.961+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:01.961+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:51:01.972+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:01.972+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:51:01.984+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.356 seconds
+[2024-06-27T23:51:02.975+0000] {processor.py:161} INFO - Started process (PID=1899) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:02.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:51:02.977+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:02.977+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:03.280+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:03.330+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:03.330+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:51:03.340+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:03.340+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:51:03.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.381 seconds
+[2024-06-27T23:51:33.559+0000] {processor.py:161} INFO - Started process (PID=1925) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:33.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:51:33.560+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:33.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:33.854+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:51:33.863+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:33.863+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:51:33.874+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:51:33.874+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:51:33.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.332 seconds
+[2024-06-27T23:52:04.128+0000] {processor.py:161} INFO - Started process (PID=1944) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:52:04.128+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:52:04.129+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:52:04.129+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:52:04.425+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:52:04.434+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:52:04.434+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:52:04.446+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:52:04.446+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:52:04.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.334 seconds
+[2024-06-27T23:52:34.696+0000] {processor.py:161} INFO - Started process (PID=1970) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:52:34.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:52:34.697+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:52:34.697+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:52:34.993+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:52:35.003+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:52:35.002+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:52:35.015+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:52:35.015+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:52:35.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.335 seconds
+[2024-06-27T23:53:03.942+0000] {processor.py:161} INFO - Started process (PID=1989) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:03.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:53:03.943+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:03.943+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:04.250+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:04.302+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:04.302+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:53:04.312+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:04.312+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:53:04.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.387 seconds
+[2024-06-27T23:53:28.489+0000] {processor.py:161} INFO - Started process (PID=2008) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:28.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:53:28.490+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:28.490+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:28.806+0000] {processor.py:840} INFO - DAG(s) 'model_training_v1' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:28.812+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:28.812+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:53:28.824+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:28.824+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v1 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:53:28.840+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.355 seconds
+[2024-06-27T23:53:37.918+0000] {processor.py:161} INFO - Started process (PID=2017) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:37.919+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:53:37.919+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:37.919+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:38.239+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:53:38.299+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:38.299+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:model_training_v2
+[2024-06-27T23:53:38.307+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:38.306+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:model_training_v2
+[2024-06-27T23:53:38.312+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:38.312+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:model_training_v2
+[2024-06-27T23:53:38.313+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:38.313+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:53:38.319+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:38.319+0000] {dag.py:3118} INFO - Creating ORM DAG for model_training_v2
+[2024-06-27T23:53:38.326+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:53:38.326+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-26 00:00:00+00:00, run_after=2024-06-27 00:00:00+00:00
+[2024-06-27T23:53:38.337+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.423 seconds
+[2024-06-27T23:54:08.578+0000] {processor.py:161} INFO - Started process (PID=2043) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:54:08.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:54:08.579+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:54:08.579+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:54:08.904+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:54:08.917+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:54:08.916+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:54:08.929+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:54:08.928+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:54:08.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.366 seconds
+[2024-06-27T23:54:39.113+0000] {processor.py:161} INFO - Started process (PID=2069) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:54:39.114+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:54:39.115+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:54:39.115+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:54:39.440+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:54:39.452+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:54:39.452+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:54:39.465+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:54:39.465+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:54:39.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.367 seconds
+[2024-06-27T23:55:09.672+0000] {processor.py:161} INFO - Started process (PID=2088) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:55:09.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:55:09.673+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:55:09.673+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:55:10.004+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:55:10.022+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:55:10.022+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:55:10.040+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:55:10.040+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:55:10.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.392 seconds
+[2024-06-27T23:55:40.257+0000] {processor.py:161} INFO - Started process (PID=2114) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:55:40.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:55:40.258+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:55:40.258+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:55:40.577+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:55:40.589+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:55:40.589+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:55:40.601+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:55:40.601+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:55:40.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.360 seconds
+[2024-06-27T23:56:10.819+0000] {processor.py:161} INFO - Started process (PID=2133) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:56:10.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:56:10.820+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:56:10.820+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:56:11.161+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:56:11.177+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:56:11.177+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:56:11.190+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:56:11.190+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:56:11.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.387 seconds
+[2024-06-27T23:56:41.442+0000] {processor.py:161} INFO - Started process (PID=2159) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:56:41.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:56:41.444+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:56:41.444+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:56:41.736+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:56:41.749+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:56:41.749+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:56:41.761+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:56:41.761+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:56:41.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.332 seconds
+[2024-06-27T23:57:11.940+0000] {processor.py:161} INFO - Started process (PID=2185) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:57:11.940+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:57:11.941+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:57:11.941+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:57:12.250+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:57:12.265+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:57:12.265+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:57:12.279+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:57:12.278+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:57:12.290+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.353 seconds
+[2024-06-27T23:57:42.483+0000] {processor.py:161} INFO - Started process (PID=2204) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:57:42.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:57:42.486+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:57:42.485+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:57:42.774+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:57:42.787+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:57:42.787+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:57:42.798+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:57:42.798+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:57:42.811+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.332 seconds
+[2024-06-27T23:58:13.060+0000] {processor.py:161} INFO - Started process (PID=2230) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:58:13.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:58:13.061+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:58:13.061+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:58:13.372+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:58:13.386+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:58:13.386+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:58:13.398+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:58:13.398+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:58:13.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.353 seconds
+[2024-06-27T23:58:43.596+0000] {processor.py:161} INFO - Started process (PID=2256) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:58:43.597+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:58:43.598+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:58:43.597+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:58:43.897+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:58:43.911+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:58:43.911+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:58:43.923+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:58:43.922+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:58:43.934+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.342 seconds
+[2024-06-27T23:59:14.096+0000] {processor.py:161} INFO - Started process (PID=2275) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:59:14.097+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:59:14.097+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:59:14.097+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:59:14.400+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:59:14.412+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:59:14.412+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:59:14.423+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:59:14.423+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:59:14.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.348 seconds
+[2024-06-27T23:59:44.606+0000] {processor.py:161} INFO - Started process (PID=2301) to work on /opt/airflow/dags/model_training.py
+[2024-06-27T23:59:44.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/model_training.py for tasks to queue
+[2024-06-27T23:59:44.609+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:59:44.609+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/model_training.py
+[2024-06-27T23:59:44.933+0000] {processor.py:840} INFO - DAG(s) 'model_training_v2' retrieved from /opt/airflow/dags/model_training.py
+[2024-06-27T23:59:44.948+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:59:44.948+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-27T23:59:44.960+0000] {logging_mixin.py:188} INFO - [2024-06-27T23:59:44.960+0000] {dag.py:3954} INFO - Setting next_dagrun for model_training_v2 to 2024-06-27 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-27T23:59:44.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/model_training.py took 0.370 seconds

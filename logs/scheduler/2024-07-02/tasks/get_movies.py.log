@@ -1,0 +1,15 @@
+[2024-07-02T01:23:33.686+0000] {processor.py:161} INFO - Started process (PID=55) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:23:33.687+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-07-02T01:23:33.688+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:23:33.688+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:23:33.699+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:23:33.710+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.028 seconds
+[2024-07-02T01:24:03.892+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:24:03.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-07-02T01:24:03.893+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:24:03.893+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:24:03.902+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:24:03.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.023 seconds
+[2024-07-02T01:24:34.138+0000] {processor.py:161} INFO - Started process (PID=144) to work on /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:24:34.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/get_movies.py for tasks to queue
+[2024-07-02T01:24:34.140+0000] {logging_mixin.py:188} INFO - [2024-07-02T01:24:34.140+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:24:34.150+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_movies.py
+[2024-07-02T01:24:34.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/get_movies.py took 0.026 seconds

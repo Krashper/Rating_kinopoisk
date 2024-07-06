@@ -1,0 +1,105 @@
+[2024-06-25T02:42:52.268+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-25T02:42:52.280+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_table_8.upload_file_to_yandex_s3 scheduled__2024-06-24T12:00:00+00:00 [queued]>
+[2024-06-25T02:42:52.286+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_table_8.upload_file_to_yandex_s3 scheduled__2024-06-24T12:00:00+00:00 [queued]>
+[2024-06-25T02:42:52.286+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-25T02:42:52.296+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): upload_file_to_yandex_s3> on 2024-06-24 12:00:00+00:00
+[2024-06-25T02:42:52.301+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=4239) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-25T02:42:52.302+0000] {standard_task_runner.py:63} INFO - Started process 4240 to run task
+[2024-06-25T02:42:52.302+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'create_table_8', 'upload_file_to_yandex_s3', 'scheduled__2024-06-24T12:00:00+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpo2y2e39m']
+[2024-06-25T02:42:52.303+0000] {standard_task_runner.py:91} INFO - Job 62: Subtask upload_file_to_yandex_s3
+[2024-06-25T02:42:52.339+0000] {task_command.py:426} INFO - Running <TaskInstance: create_table_8.upload_file_to_yandex_s3 scheduled__2024-06-24T12:00:00+00:00 [running]> on host 5ba0933a4dfa
+[2024-06-25T02:42:52.402+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='create_table_8' AIRFLOW_CTX_TASK_ID='upload_file_to_yandex_s3' AIRFLOW_CTX_EXECUTION_DATE='2024-06-24T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-24T12:00:00+00:00'
+[2024-06-25T02:42:52.403+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-25T02:42:52.420+0000] {base.py:84} INFO - Using connection ID 'yandex_cloud_default' for task execution.
+[2024-06-25T02:42:52.421+0000] {warnings.py:110} WARNING - <string>:9: UserWarning: AWS Connection (conn_id='yandex_cloud_default', conn_type='yandexcloud') expected connection type 'aws', got 'yandexcloud'. This connection might not work correctly. Please use Amazon Web Services Connection type.
+
+[2024-06-25T02:42:52.714+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-25T02:42:52.715+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl.py", line 49, in upload_file_to_yandex_s3
+    hook.load_bytes(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 1182, in load_bytes
+    self._upload_file_obj(f, key, bucket_name, replace, encrypt, acl_policy)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 1222, in _upload_file_obj
+    if not replace and self.check_for_key(key, bucket_name):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 922, in check_for_key
+    obj = self.head_object(key, bucket_name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 902, in head_object
+    return self.get_conn().head_object(Bucket=bucket_name, Key=key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 553, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 989, in _make_api_call
+    http, parsed_response = self._make_request(
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1015, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 198, in _send_request
+    request = self.create_request(request_dict, operation_model)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 134, in create_request
+    self._event_emitter.emit(
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/signers.py", line 105, in handler
+    return self.sign(operation_name, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/signers.py", line 195, in sign
+    auth.add_auth(request)
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/auth.py", line 418, in add_auth
+    raise NoCredentialsError()
+botocore.exceptions.NoCredentialsError: Unable to locate credentials
+[2024-06-25T02:42:52.723+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=create_table_8, task_id=upload_file_to_yandex_s3, run_id=scheduled__2024-06-24T12:00:00+00:00, execution_date=20240624T120000, start_date=20240625T024252, end_date=20240625T024252
+[2024-06-25T02:42:52.732+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 62 for task upload_file_to_yandex_s3 (Unable to locate credentials; 4240)
+[2024-06-25T02:42:52.756+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-25T02:42:52.767+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-25T02:42:52.770+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
