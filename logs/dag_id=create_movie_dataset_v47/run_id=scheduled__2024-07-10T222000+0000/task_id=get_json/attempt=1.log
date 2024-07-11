@@ -1,0 +1,27 @@
+[2024-07-10T22:36:45.001+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-10T22:36:45.017+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_movie_dataset_v47.get_json scheduled__2024-07-10T22:20:00+00:00 [queued]>
+[2024-07-10T22:36:45.023+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_movie_dataset_v47.get_json scheduled__2024-07-10T22:20:00+00:00 [queued]>
+[2024-07-10T22:36:45.024+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-10T22:36:45.033+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_json> on 2024-07-10 22:20:00+00:00
+[2024-07-10T22:36:45.038+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=150) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-10T22:36:45.039+0000] {standard_task_runner.py:63} INFO - Started process 152 to run task
+[2024-07-10T22:36:45.039+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'create_movie_dataset_v47', 'get_json', 'scheduled__2024-07-10T22:20:00+00:00', '--job-id', '99', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpojrtj3vh']
+[2024-07-10T22:36:45.040+0000] {standard_task_runner.py:91} INFO - Job 99: Subtask get_json
+[2024-07-10T22:36:45.076+0000] {task_command.py:426} INFO - Running <TaskInstance: create_movie_dataset_v47.get_json scheduled__2024-07-10T22:20:00+00:00 [running]> on host 95d2f1320dbe
+[2024-07-10T22:36:45.141+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='create_movie_dataset_v47' AIRFLOW_CTX_TASK_ID='get_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-10T22:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-10T22:20:00+00:00'
+[2024-07-10T22:36:45.142+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-10T22:36:45.168+0000] {logging_mixin.py:188} INFO - 14
+[2024-07-10T22:36:45.169+0000] {logging_mixin.py:188} INFO - N2TNP3Z-7ZAMFKD-HBA2YVR-9G8KV1Y
+[2024-07-10T22:36:49.598+0000] {logging_mixin.py:188} INFO - Данные успешно сохранены в файл 'movie_data.json'.
+[2024-07-10T22:36:49.603+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-07-10T22:36:49.608+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-10T22:36:49.608+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-10T22:36:49.614+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=create_movie_dataset_v47, task_id=get_json, run_id=scheduled__2024-07-10T22:20:00+00:00, execution_date=20240710T222000, start_date=20240710T223645, end_date=20240710T223649
+[2024-07-10T22:36:49.627+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-10T22:36:49.633+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py:1296: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-07-10T22:36:49.643+0000] {taskinstance.py:3498} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-07-10T22:36:49.646+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

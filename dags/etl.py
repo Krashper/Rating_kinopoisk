@@ -19,7 +19,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id="create_movie_dataset_v41",
+    dag_id="create_movie_dataset_v47",
     description="It is a dag which gets data from HeadHunter and preprocesses them",
     start_date=datetime(2024, 1, 1),
     schedule_interval="*/10 * * * *",
@@ -35,6 +35,7 @@ with DAG(
         task_id="get_json",
         python_callable=get_movies
     )
+
 
     get_data_from_json_task = PythonOperator(
         task_id="get_data_from_json",
@@ -53,6 +54,7 @@ with DAG(
         postgres_conn_id="postgres",
         sql=insert_data()
     )
+
 
     start_dag_task >> get_json_task
     get_json_task >> [get_data_from_json_task, create_table_task]

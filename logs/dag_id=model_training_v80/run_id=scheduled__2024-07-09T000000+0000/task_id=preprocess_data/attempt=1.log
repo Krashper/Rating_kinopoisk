@@ -1,0 +1,247 @@
+[2024-07-10T23:33:22.835+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-10T23:33:22.846+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v80.preprocess_data scheduled__2024-07-09T00:00:00+00:00 [queued]>
+[2024-07-10T23:33:22.850+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v80.preprocess_data scheduled__2024-07-09T00:00:00+00:00 [queued]>
+[2024-07-10T23:33:22.851+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-10T23:33:22.860+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): preprocess_data> on 2024-07-09 00:00:00+00:00
+[2024-07-10T23:33:22.865+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1359) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-10T23:33:22.866+0000] {standard_task_runner.py:63} INFO - Started process 1380 to run task
+[2024-07-10T23:33:22.866+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v80', 'preprocess_data', 'scheduled__2024-07-09T00:00:00+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmpqqisnnjj']
+[2024-07-10T23:33:22.867+0000] {standard_task_runner.py:91} INFO - Job 166: Subtask preprocess_data
+[2024-07-10T23:33:22.900+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v80.preprocess_data scheduled__2024-07-09T00:00:00+00:00 [running]> on host 9211d7c5a4db
+[2024-07-10T23:33:22.952+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v80' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-09T00:00:00+00:00'
+[2024-07-10T23:33:22.952+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-10T23:33:23.022+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  драма
+[2024-07-10T23:33:23.024+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  комедия
+[2024-07-10T23:33:23.026+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  криминал
+[2024-07-10T23:33:23.027+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  ужасы
+[2024-07-10T23:33:23.029+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  фантастика
+[2024-07-10T23:33:23.031+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  триллер
+[2024-07-10T23:33:23.032+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  семейный
+[2024-07-10T23:33:23.034+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  документальный
+[2024-07-10T23:33:23.035+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  биография
+[2024-07-10T23:33:23.037+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  боевик
+[2024-07-10T23:33:23.038+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  короткометражка
+[2024-07-10T23:33:23.040+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  детектив
+[2024-07-10T23:33:23.042+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  история
+[2024-07-10T23:33:23.043+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  мелодрама
+[2024-07-10T23:33:23.045+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  приключения
+[2024-07-10T23:33:23.047+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  музыка
+[2024-07-10T23:33:23.048+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  военный
+[2024-07-10T23:33:23.050+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  фэнтези
+[2024-07-10T23:33:23.061+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  мюзикл
+[2024-07-10T23:33:23.063+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  спорт
+[2024-07-10T23:33:23.065+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  детский
+[2024-07-10T23:33:23.066+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  реальное ТВ
+[2024-07-10T23:33:23.068+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  вестерн
+[2024-07-10T23:33:23.069+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  фильм-нуар
+[2024-07-10T23:33:23.072+0000] {logging_mixin.py:188} INFO - Добавлена страна:  США
+[2024-07-10T23:33:23.075+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Грузия
+[2024-07-10T23:33:23.077+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Россия
+[2024-07-10T23:33:23.078+0000] {logging_mixin.py:188} INFO - Добавлена страна:  СССР
+[2024-07-10T23:33:23.080+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Чехия
+[2024-07-10T23:33:23.081+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Италия
+[2024-07-10T23:33:23.083+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Испания
+[2024-07-10T23:33:23.084+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Казахстан
+[2024-07-10T23:33:23.086+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Греция
+[2024-07-10T23:33:23.087+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Франция
+[2024-07-10T23:33:23.089+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Япония
+[2024-07-10T23:33:23.092+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Нидерланды
+[2024-07-10T23:33:23.094+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Швейцария
+[2024-07-10T23:33:23.095+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Австралия
+[2024-07-10T23:33:23.097+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Словения
+[2024-07-10T23:33:23.098+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Хорватия
+[2024-07-10T23:33:23.100+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Латвия
+[2024-07-10T23:33:23.101+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Великобритания
+[2024-07-10T23:33:23.103+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Австрия
+[2024-07-10T23:33:23.105+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Чили
+[2024-07-10T23:33:23.110+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Португалия
+[2024-07-10T23:33:23.112+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Германия
+[2024-07-10T23:33:23.114+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Словакия
+[2024-07-10T23:33:23.119+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Китай
+[2024-07-10T23:33:23.123+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Беларусь
+[2024-07-10T23:33:23.125+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Индия
+[2024-07-10T23:33:23.131+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Алжир
+[2024-07-10T23:33:23.133+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Мексика
+[2024-07-10T23:33:23.135+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Канада
+[2024-07-10T23:33:23.137+0000] {logging_mixin.py:188} INFO - Добавлена страна:  ОАЭ
+[2024-07-10T23:33:23.139+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Турция
+[2024-07-10T23:33:23.141+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Коста-Рика
+[2024-07-10T23:33:23.143+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Исландия
+[2024-07-10T23:33:23.145+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Норвегия
+[2024-07-10T23:33:23.147+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Израиль
+[2024-07-10T23:33:23.148+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Украина
+[2024-07-10T23:33:23.150+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Аргентина
+[2024-07-10T23:33:23.152+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Гонконг
+[2024-07-10T23:33:23.157+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Бельгия
+[2024-07-10T23:33:23.160+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Венгрия
+[2024-07-10T23:33:23.162+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Таиланд
+[2024-07-10T23:33:23.164+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Польша
+[2024-07-10T23:33:23.166+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Дания
+[2024-07-10T23:33:23.168+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Швеция
+[2024-07-10T23:33:23.170+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Эстония
+[2024-07-10T23:33:23.174+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Кыргызстан
+[2024-07-10T23:33:23.176+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Новая Зеландия
+[2024-07-10T23:33:23.178+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Корея Южная
+[2024-07-10T23:33:23.180+0000] {logging_mixin.py:188} INFO - Добавлена страна:  ЮАР
+[2024-07-10T23:33:23.182+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Бразилия
+[2024-07-10T23:33:23.183+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Филиппины
+[2024-07-10T23:33:23.185+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Мальта
+[2024-07-10T23:33:23.186+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Уругвай
+[2024-07-10T23:33:23.188+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Ирландия
+[2024-07-10T23:33:23.190+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Ливан
+[2024-07-10T23:33:23.192+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Болгария
+[2024-07-10T23:33:23.193+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Доминикана
+[2024-07-10T23:33:23.195+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Чехословакия
+[2024-07-10T23:33:23.197+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Сербия
+[2024-07-10T23:33:23.198+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Германия (ГДР)
+[2024-07-10T23:33:23.200+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Кипр
+[2024-07-10T23:33:23.202+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Тайвань
+[2024-07-10T23:33:23.203+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Люксембург
+[2024-07-10T23:33:23.205+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Румыния
+[2024-07-10T23:33:23.207+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Колумбия
+[2024-07-10T23:33:23.211+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.211+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Азербайджан
+[2024-07-10T23:33:23.213+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.213+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Вьетнам
+[2024-07-10T23:33:23.215+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.215+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Марокко
+[2024-07-10T23:33:23.217+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.217+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Тунис
+[2024-07-10T23:33:23.219+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.219+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Югославия
+[2024-07-10T23:33:23.221+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.221+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Пакистан
+[2024-07-10T23:33:23.223+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.223+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Перу
+[2024-07-10T23:33:23.225+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.225+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Индонезия
+[2024-07-10T23:33:23.227+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.227+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Малайзия
+[2024-07-10T23:33:23.229+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.229+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Германия (ФРГ)
+[2024-07-10T23:33:23.230+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.231+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Литва
+[2024-07-10T23:33:23.232+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.233+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Армения
+[2024-07-10T23:33:23.234+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.235+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Иран
+[2024-07-10T23:33:23.236+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.236+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Финляндия
+[2024-07-10T23:33:23.238+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.238+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Босния и Герцеговина
+[2024-07-10T23:33:23.240+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.241+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Саудовская Аравия
+[2024-07-10T23:33:23.242+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.242+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Катар
+[2024-07-10T23:33:23.244+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.244+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Сингапур
+[2024-07-10T23:33:23.246+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.246+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Эквадор
+[2024-07-10T23:33:23.248+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.248+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Египет
+[2024-07-10T23:33:23.249+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.250+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Багамы
+[2024-07-10T23:33:23.251+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.251+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Пуэрто Рико
+[2024-07-10T23:33:23.253+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.253+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Монако
+[2024-07-10T23:33:23.255+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.255+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Руанда
+[2024-07-10T23:33:23.257+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.257+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Ватикан
+[2024-07-10T23:33:23.259+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.259+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Панама
+[2024-07-10T23:33:23.260+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.261+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Молдова
+[2024-07-10T23:33:23.262+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.262+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Аруба
+[2024-07-10T23:33:23.264+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.264+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Монголия
+[2024-07-10T23:33:23.266+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.266+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Косово
+[2024-07-10T23:33:23.268+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.268+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Северная Македония
+[2024-07-10T23:33:23.269+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:127: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+
+[2024-07-10T23:33:23.270+0000] {logging_mixin.py:188} INFO - Добавлена страна:  Албания
+[2024-07-10T23:33:23.272+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:55: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data[f"{feature}_transformed"] = le.transform(data[feature])
+
+[2024-07-10T23:33:23.282+0000] {base.py:84} INFO - Using connection ID 'minio' for task execution.
+[2024-07-10T23:33:23.282+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio', conn_type='aws') credentials retrieved from login and password.
+[2024-07-10T23:33:23.606+0000] {warnings.py:110} WARNING - /opt/airflow/dags/tasks/preprocess_data.py:55: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  data[f"{feature}_transformed"] = le.transform(data[feature])
+
+[2024-07-10T23:33:23.613+0000] {base.py:84} INFO - Using connection ID 'minio' for task execution.
+[2024-07-10T23:33:23.614+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio', conn_type='aws') credentials retrieved from login and password.
+[2024-07-10T23:33:23.777+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-10T23:33:23.778+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-10T23:33:23.786+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=model_training_v80, task_id=preprocess_data, run_id=scheduled__2024-07-09T00:00:00+00:00, execution_date=20240709T000000, start_date=20240710T233322, end_date=20240710T233323
+[2024-07-10T23:33:23.806+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-10T23:33:23.817+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-10T23:33:23.819+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

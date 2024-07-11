@@ -3,7 +3,7 @@ import pandas as pd
 
 def insert_data():
     try:
-        dataset = pd.read_csv("dags/data/dataset.csv", index_col=0, na_values=['nan', 'N/A'])
+        dataset = pd.read_csv("dags/data/etl/dataset.csv", index_col=0, na_values=['nan', 'N/A'])
 
         print(dataset)
         insert_queries = []

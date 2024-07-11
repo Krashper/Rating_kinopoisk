@@ -1,0 +1,63 @@
+[2024-07-10T22:37:21.336+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-10T22:37:21.346+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v71.preprocess_data scheduled__2024-07-09T00:00:00+00:00 [queued]>
+[2024-07-10T22:37:21.351+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v71.preprocess_data scheduled__2024-07-09T00:00:00+00:00 [queued]>
+[2024-07-10T22:37:21.351+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-10T22:37:21.360+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): preprocess_data> on 2024-07-09 00:00:00+00:00
+[2024-07-10T22:37:21.365+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=284) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-10T22:37:21.366+0000] {standard_task_runner.py:63} INFO - Started process 305 to run task
+[2024-07-10T22:37:21.365+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v71', 'preprocess_data', 'scheduled__2024-07-09T00:00:00+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmp2m9l_ahf']
+[2024-07-10T22:37:21.367+0000] {standard_task_runner.py:91} INFO - Job 105: Subtask preprocess_data
+[2024-07-10T22:37:21.396+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v71.preprocess_data scheduled__2024-07-09T00:00:00+00:00 [running]> on host 95d2f1320dbe
+[2024-07-10T22:37:21.444+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v71' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-09T00:00:00+00:00'
+[2024-07-10T22:37:21.445+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-10T22:37:21.497+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  драма
+[2024-07-10T22:37:21.499+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  комедия
+[2024-07-10T22:37:21.500+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  криминал
+[2024-07-10T22:37:21.502+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  ужасы
+[2024-07-10T22:37:21.503+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  фантастика
+[2024-07-10T22:37:21.504+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  триллер
+[2024-07-10T22:37:21.505+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  семейный
+[2024-07-10T22:37:21.506+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  документальный
+[2024-07-10T22:37:21.507+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  биография
+[2024-07-10T22:37:21.509+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  боевик
+[2024-07-10T22:37:21.542+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  короткометражка
+[2024-07-10T22:37:21.543+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  детектив
+[2024-07-10T22:37:21.545+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  история
+[2024-07-10T22:37:21.547+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  мелодрама
+[2024-07-10T22:37:21.548+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  приключения
+[2024-07-10T22:37:21.550+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  музыка
+[2024-07-10T22:37:21.551+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  военный
+[2024-07-10T22:37:21.553+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  фэнтези
+[2024-07-10T22:37:21.554+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  мюзикл
+[2024-07-10T22:37:21.556+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  спорт
+[2024-07-10T22:37:21.557+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  детский
+[2024-07-10T22:37:21.558+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  реальное ТВ
+[2024-07-10T22:37:21.560+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  вестерн
+[2024-07-10T22:37:21.562+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-10T22:37:21.562+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/tasks/preprocess_data.py", line 117, in preprocess_data
+    get_binary_genre(data, country)
+TypeError: preprocess_data.<locals>.get_binary_genre() takes 1 positional argument but 2 were given
+[2024-07-10T22:37:21.571+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=model_training_v71, task_id=preprocess_data, run_id=scheduled__2024-07-09T00:00:00+00:00, execution_date=20240709T000000, start_date=20240710T223721, end_date=20240710T223721
+[2024-07-10T22:37:21.580+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 105 for task preprocess_data (preprocess_data.<locals>.get_binary_genre() takes 1 positional argument but 2 were given; 305)
+[2024-07-10T22:37:21.619+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-10T22:37:21.628+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-10T22:37:21.631+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

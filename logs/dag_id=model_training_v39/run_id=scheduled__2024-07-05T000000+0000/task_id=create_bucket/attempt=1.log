@@ -1,0 +1,22 @@
+[2024-07-06T12:32:56.126+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-06T12:32:56.137+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v39.create_bucket scheduled__2024-07-05T00:00:00+00:00 [queued]>
+[2024-07-06T12:32:56.141+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v39.create_bucket scheduled__2024-07-05T00:00:00+00:00 [queued]>
+[2024-07-06T12:32:56.142+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-06T12:32:56.152+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): create_bucket> on 2024-07-05 00:00:00+00:00
+[2024-07-06T12:32:56.157+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=4174) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-06T12:32:56.158+0000] {standard_task_runner.py:63} INFO - Started process 4216 to run task
+[2024-07-06T12:32:56.158+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v39', 'create_bucket', 'scheduled__2024-07-05T00:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmp80d43un9']
+[2024-07-06T12:32:56.160+0000] {standard_task_runner.py:91} INFO - Job 33: Subtask create_bucket
+[2024-07-06T12:32:56.194+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v39.create_bucket scheduled__2024-07-05T00:00:00+00:00 [running]> on host fba33172adc1
+[2024-07-06T12:32:56.250+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v39' AIRFLOW_CTX_TASK_ID='create_bucket' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-05T00:00:00+00:00'
+[2024-07-06T12:32:56.251+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-06T12:32:56.264+0000] {base.py:84} INFO - Using connection ID 'minio' for task execution.
+[2024-07-06T12:32:56.265+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio', conn_type='aws') credentials retrieved from login and password.
+[2024-07-06T12:32:56.610+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-06T12:32:56.611+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-06T12:32:56.617+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=model_training_v39, task_id=create_bucket, run_id=scheduled__2024-07-05T00:00:00+00:00, execution_date=20240705T000000, start_date=20240706T123256, end_date=20240706T123256
+[2024-07-06T12:32:56.653+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-06T12:32:56.663+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-06T12:32:56.667+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

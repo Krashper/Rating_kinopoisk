@@ -1,0 +1,21 @@
+[2024-07-08T07:18:17.062+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-08T07:18:17.073+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v71.test_postgres_connection scheduled__2024-07-07T00:00:00+00:00 [queued]>
+[2024-07-08T07:18:17.078+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v71.test_postgres_connection scheduled__2024-07-07T00:00:00+00:00 [queued]>
+[2024-07-08T07:18:17.079+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-08T07:18:17.090+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): test_postgres_connection> on 2024-07-07 00:00:00+00:00
+[2024-07-08T07:18:17.096+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3671) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-08T07:18:17.097+0000] {standard_task_runner.py:63} INFO - Started process 3740 to run task
+[2024-07-08T07:18:17.097+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v71', 'test_postgres_connection', 'scheduled__2024-07-07T00:00:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmpl4il_tgo']
+[2024-07-08T07:18:17.099+0000] {standard_task_runner.py:91} INFO - Job 163: Subtask test_postgres_connection
+[2024-07-08T07:18:17.138+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v71.test_postgres_connection scheduled__2024-07-07T00:00:00+00:00 [running]> on host 999fa8207f52
+[2024-07-08T07:18:17.200+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v71' AIRFLOW_CTX_TASK_ID='test_postgres_connection' AIRFLOW_CTX_EXECUTION_DATE='2024-07-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-07T00:00:00+00:00'
+[2024-07-08T07:18:17.201+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-08T07:18:17.260+0000] {logging_mixin.py:188} INFO - You are connected to -  ('PostgreSQL 15.2, compiled by Visual C++ build 1914, 64-bit',) 
+[2024-07-08T07:18:17.260+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-08T07:18:17.261+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-08T07:18:17.268+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=model_training_v71, task_id=test_postgres_connection, run_id=scheduled__2024-07-07T00:00:00+00:00, execution_date=20240707T000000, start_date=20240708T071817, end_date=20240708T071817
+[2024-07-08T07:18:17.311+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-08T07:18:17.322+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-08T07:18:17.324+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -26,7 +26,7 @@ def get_movies():
 
     if response.status_code == 200:
         movie_data = response.json()
-        file_path = "dags/data/movie_data.json"
+        file_path = "dags/data/etl/movie_data.json"
 
         save_json(movie_data, file_path)
         print("Данные успешно сохранены в файл 'movie_data.json'.")

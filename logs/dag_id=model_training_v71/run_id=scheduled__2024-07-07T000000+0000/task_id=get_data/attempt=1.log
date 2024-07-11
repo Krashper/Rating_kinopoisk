@@ -1,0 +1,24 @@
+[2024-07-08T07:18:22.846+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-08T07:18:22.857+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v71.get_data scheduled__2024-07-07T00:00:00+00:00 [queued]>
+[2024-07-08T07:18:22.862+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v71.get_data scheduled__2024-07-07T00:00:00+00:00 [queued]>
+[2024-07-08T07:18:22.862+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-08T07:18:22.871+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_data> on 2024-07-07 00:00:00+00:00
+[2024-07-08T07:18:22.877+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3762) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-08T07:18:22.878+0000] {standard_task_runner.py:63} INFO - Started process 3783 to run task
+[2024-07-08T07:18:22.878+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v71', 'get_data', 'scheduled__2024-07-07T00:00:00+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmpdu0pdg59']
+[2024-07-08T07:18:22.880+0000] {standard_task_runner.py:91} INFO - Job 166: Subtask get_data
+[2024-07-08T07:18:22.911+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v71.get_data scheduled__2024-07-07T00:00:00+00:00 [running]> on host 999fa8207f52
+[2024-07-08T07:18:22.964+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v71' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-07T00:00:00+00:00'
+[2024-07-08T07:18:22.964+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-08T07:18:22.977+0000] {base.py:84} INFO - Using connection ID 'postgres' for task execution.
+[2024-07-08T07:18:23.025+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py:243: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return psql.read_sql(sql, con=conn, params=parameters, **kwargs)
+
+[2024-07-08T07:18:23.515+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-08T07:18:23.517+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-08T07:18:23.527+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=model_training_v71, task_id=get_data, run_id=scheduled__2024-07-07T00:00:00+00:00, execution_date=20240707T000000, start_date=20240708T071822, end_date=20240708T071823
+[2024-07-08T07:18:23.574+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-08T07:18:23.584+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-08T07:18:23.587+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

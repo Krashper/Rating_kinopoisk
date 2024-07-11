@@ -30,7 +30,7 @@ def get_row(movie: dict) -> list:
 
 
 def get_data_from_json():
-    with open("dags/data/movie_data.json", encoding="utf-8") as f:
+    with open("dags/data/etl/movie_data.json", encoding="utf-8") as f:
         data = json.load(f)
 
     columns = ["id", "name", "description", "year", "rating", "votes", "movie_length", 
@@ -45,4 +45,4 @@ def get_data_from_json():
     
     dataset = dataset.fillna(-1)
 
-    dataset.to_csv("dags/data/dataset.csv")
+    dataset.to_csv("dags/data/etl/dataset.csv")
