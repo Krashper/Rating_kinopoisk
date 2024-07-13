@@ -6,9 +6,9 @@ x-airflow-common:
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
-    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:86754231qaZ@postgres:5432/ETL
-    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://postgres:86754231qaZ@postgres:5432/ETL
-    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_DB_USER}:${AIRFLOW_DB_PASSWORD}@postgres:5432/${POSTGRES_DB}
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://${AIRFLOW_DB_USER}:${AIRFLOW_DB_PASSWORD}@postgres:5432/${POSTGRES_DB}
+    AIRFLOW__CELERY__BROKER_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
@@ -19,25 +19,23 @@ x-airflow-common:
     - ./plugins:/opt/airflow/plugins
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
 
-
 services:
 
   postgres:
     image: postgres:15
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 86754231qaZ
-      POSTGRES_DB: ETL
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - 5432:5432
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "postgres"]
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}"]
       interval: 5s
       retries: 5
     restart: always
-
 
   airflow-webserver:
     <<: *airflow-common
@@ -50,7 +48,6 @@ services:
       timeout: 10s
       retries: 5
     restart: always
-
 
   airflow-scheduler:
     <<: *airflow-common
@@ -72,7 +69,6 @@ services:
       retries: 5
     restart: always
 
-
   airflow-init:
     <<: *airflow-common
     command: version
@@ -80,9 +76,8 @@ services:
       <<: *airflow-common-env
       _AIRFLOW_DB_UPGRADE: 'true'
       _AIRFLOW_WWW_USER_CREATE: 'true'
-      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
-      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
-
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD}
 
   redis:
     image: redis:latest
@@ -94,7 +89,7 @@ services:
       timeout: 30s
       retries: 50
     restart: always
-  
+
   minio:
     image: minio/minio
     ports:
@@ -103,8 +98,8 @@ services:
     volumes:
       - minio_data:/data
     environment:
-      MINIO_ROOT_USER: Ruslan_Solarev
-      MINIO_ROOT_PASSWORD: IOHqieUV
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
     command: server --console-address ":9001" /data
 
   zookeeper:
@@ -114,7 +109,6 @@ services:
       - "2181:2181"
     networks:
       - airflow_network
-
 
   kafka:
     image: wurstmeister/kafka
@@ -131,7 +125,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - airflow_network
-
 
 volumes:
   postgres-db-volume:

@@ -15,3 +15,15 @@
 [2024-07-13T03:15:07.926+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/joblib/parallel.py:1359: UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
   n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
 
+[2024-07-13T03:21:59.402+0000] {logging_mixin.py:188} INFO - Best Parameters: {'max_depth': None, 'max_features': 7, 'min_samples_leaf': 3, 'min_samples_split': 2, 'n_estimators': 200}
+[2024-07-13T03:21:59.402+0000] {logging_mixin.py:188} INFO - Best Scoring: -0.427623635939303
+[2024-07-13T03:22:01.398+0000] {base.py:84} INFO - Using connection ID 'minio' for task execution.
+[2024-07-13T03:22:01.398+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio', conn_type='aws') credentials retrieved from login and password.
+[2024-07-13T03:22:01.727+0000] {logging_mixin.py:188} INFO - RMSE:  0.6625549279009565
+[2024-07-13T03:22:01.727+0000] {logging_mixin.py:188} INFO - MAE:  0.5216890135131926
+[2024-07-13T03:22:01.728+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-13T03:22:01.728+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-13T03:22:01.734+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=model_training_v90, task_id=train_model, run_id=scheduled__2024-07-13T03:10:00+00:00, execution_date=20240713T031000, start_date=20240713T031507, end_date=20240713T032201
+[2024-07-13T03:22:01.772+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-13T03:22:01.783+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-13T03:22:01.786+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

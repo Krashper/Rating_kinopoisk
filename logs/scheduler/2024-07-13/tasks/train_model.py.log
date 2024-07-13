@@ -663,3 +663,58 @@
 [2024-07-13T03:19:50.179+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:19:50.179+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
 [2024-07-13T03:19:50.871+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
 [2024-07-13T03:19:50.878+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.704 seconds
+[2024-07-13T03:20:21.185+0000] {processor.py:161} INFO - Started process (PID=14649) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:20:21.186+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:20:21.187+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:20:21.186+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:20:21.874+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:20:21.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.700 seconds
+[2024-07-13T03:20:52.245+0000] {processor.py:161} INFO - Started process (PID=14774) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:20:52.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:20:52.246+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:20:52.246+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:20:52.912+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:20:52.920+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.678 seconds
+[2024-07-13T03:21:23.263+0000] {processor.py:161} INFO - Started process (PID=14912) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:21:23.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:21:23.264+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:21:23.264+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:21:23.913+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:21:23.920+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.661 seconds
+[2024-07-13T03:21:54.420+0000] {processor.py:161} INFO - Started process (PID=15057) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:21:54.421+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:21:54.422+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:21:54.421+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:21:55.058+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:21:55.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.649 seconds
+[2024-07-13T03:22:25.523+0000] {processor.py:161} INFO - Started process (PID=15182) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:22:25.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:22:25.524+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:22:25.524+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:22:26.230+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:22:26.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.719 seconds
+[2024-07-13T03:22:56.601+0000] {processor.py:161} INFO - Started process (PID=15320) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:22:56.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:22:56.602+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:22:56.602+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:22:57.336+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:22:57.346+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.750 seconds
+[2024-07-13T03:30:28.575+0000] {processor.py:161} INFO - Started process (PID=154) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:30:28.576+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:30:28.579+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:30:28.578+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:30:29.363+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:30:29.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.801 seconds
+[2024-07-13T03:30:59.650+0000] {processor.py:161} INFO - Started process (PID=282) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:30:59.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:30:59.652+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:30:59.652+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:31:00.283+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:31:00.291+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.644 seconds
+[2024-07-13T03:31:30.677+0000] {processor.py:161} INFO - Started process (PID=426) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:31:30.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:31:30.678+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:31:30.678+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:31:31.335+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:31:31.345+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.672 seconds
+[2024-07-13T03:32:01.926+0000] {processor.py:161} INFO - Started process (PID=571) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:32:01.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:32:01.949+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:32:01.949+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:32:02.692+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:32:02.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.778 seconds
+[2024-07-13T03:32:33.048+0000] {processor.py:161} INFO - Started process (PID=690) to work on /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:32:33.048+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/train_model.py for tasks to queue
+[2024-07-13T03:32:33.049+0000] {logging_mixin.py:188} INFO - [2024-07-13T03:32:33.049+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:32:33.673+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/train_model.py
+[2024-07-13T03:32:33.681+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/train_model.py took 0.637 seconds
