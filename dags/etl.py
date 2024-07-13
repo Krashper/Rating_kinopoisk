@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.operators.python import PythonOperator, ShortCircuitOperator
 from tasks.get_movies import get_movies
@@ -19,8 +18,8 @@ default_args = {
 }
 
 with DAG(
-    dag_id="create_movie_dataset_v47",
-    description="It is a dag which gets data from HeadHunter and preprocesses them",
+    dag_id="create_movie_dataset_v49",
+    description="It is a dag which gets data from Kinopoisk API and save them into database",
     start_date=datetime(2024, 1, 1),
     schedule_interval="*/10 * * * *",
     catchup=False,

@@ -13,5 +13,5 @@ def create_bucket(bucket_name: str):
         return
     
     except Exception as e:
-        logging.error("Ошибка во время создания bucket: ", e)
+        logging.error("Error during creating S3-bucket: ", e)
     

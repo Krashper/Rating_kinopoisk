@@ -1,0 +1,29 @@
+[2024-07-13T02:42:46.916+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-13T02:42:46.927+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v89.train_model scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-13T02:42:46.932+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v89.train_model scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-13T02:42:46.932+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-13T02:42:46.941+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_model> on 2024-07-12 00:00:00+00:00
+[2024-07-13T02:42:46.949+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2851) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-13T02:42:46.950+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v89', 'train_model', 'scheduled__2024-07-12T00:00:00+00:00', '--job-id', '434', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmpxammfxk8']
+[2024-07-13T02:42:46.952+0000] {standard_task_runner.py:63} INFO - Started process 2872 to run task
+[2024-07-13T02:42:46.952+0000] {standard_task_runner.py:91} INFO - Job 434: Subtask train_model
+[2024-07-13T02:42:46.982+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v89.train_model scheduled__2024-07-12T00:00:00+00:00 [running]> on host 0e0c69066946
+[2024-07-13T02:42:47.147+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v89' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-07-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-12T00:00:00+00:00'
+[2024-07-13T02:42:47.148+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-13T02:42:47.162+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/joblib/parallel.py:1359: UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+  n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+
+[2024-07-13T02:44:21.901+0000] {logging_mixin.py:188} INFO - Best Parameters: {'max_depth': None, 'max_features': 7, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 200}
+[2024-07-13T02:44:21.901+0000] {logging_mixin.py:188} INFO - Best Scoring: -0.6405537882610065
+[2024-07-13T02:44:22.077+0000] {base.py:84} INFO - Using connection ID 'minio' for task execution.
+[2024-07-13T02:44:22.078+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio', conn_type='aws') credentials retrieved from login and password.
+[2024-07-13T02:44:22.310+0000] {logging_mixin.py:188} INFO - RMSE:  0.8559558553552512
+[2024-07-13T02:44:22.310+0000] {logging_mixin.py:188} INFO - MAE:  0.6756475770676686
+[2024-07-13T02:44:22.311+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-13T02:44:22.311+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-13T02:44:22.317+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=model_training_v89, task_id=train_model, run_id=scheduled__2024-07-12T00:00:00+00:00, execution_date=20240712T000000, start_date=20240713T024246, end_date=20240713T024422
+[2024-07-13T02:44:22.348+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-13T02:44:22.360+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-13T02:44:22.363+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

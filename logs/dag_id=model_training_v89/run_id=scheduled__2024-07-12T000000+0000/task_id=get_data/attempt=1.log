@@ -1,0 +1,72 @@
+[2024-07-13T02:42:15.626+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-13T02:42:15.637+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v89.get_data scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-13T02:42:15.641+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v89.get_data scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-13T02:42:15.641+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-13T02:42:15.651+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_data> on 2024-07-12 00:00:00+00:00
+[2024-07-13T02:42:15.656+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2662) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-13T02:42:15.657+0000] {standard_task_runner.py:63} INFO - Started process 2683 to run task
+[2024-07-13T02:42:15.657+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v89', 'get_data', 'scheduled__2024-07-12T00:00:00+00:00', '--job-id', '425', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmpiq6e5cb3']
+[2024-07-13T02:42:15.658+0000] {standard_task_runner.py:91} INFO - Job 425: Subtask get_data
+[2024-07-13T02:42:15.724+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v89.get_data scheduled__2024-07-12T00:00:00+00:00 [running]> on host 0e0c69066946
+[2024-07-13T02:42:15.779+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v89' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-12T00:00:00+00:00'
+[2024-07-13T02:42:15.779+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-13T02:42:15.792+0000] {base.py:84} INFO - Using connection ID 'postgres' for task execution.
+[2024-07-13T02:42:15.838+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py:243: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return psql.read_sql(sql, con=conn, params=parameters, **kwargs)
+
+[2024-07-13T02:42:15.843+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-13T02:42:15.844+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 2262, in execute
+    cur.execute(sql, *args)
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "movies" не существует
+LINE 1: SELECT * FROM movies
+                      ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/tasks/get_data_from_db.py", line 6, in get_data
+    data = hook.get_pandas_df('SELECT * FROM movies')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 243, in get_pandas_df
+    return psql.read_sql(sql, con=conn, params=parameters, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 654, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 2326, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 2274, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM movies': ОШИБКА:  отношение "movies" не существует
+LINE 1: SELECT * FROM movies
+                      ^
+
+[2024-07-13T02:42:15.853+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=model_training_v89, task_id=get_data, run_id=scheduled__2024-07-12T00:00:00+00:00, execution_date=20240712T000000, start_date=20240713T024215, end_date=20240713T024215
+[2024-07-13T02:42:15.862+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 425 for task get_data (Execution failed on sql 'SELECT * FROM movies': ОШИБКА:  отношение "movies" не существует
+LINE 1: SELECT * FROM movies
+                      ^
+; 2683)
+[2024-07-13T02:42:15.870+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-13T02:42:15.884+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-13T02:42:15.887+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

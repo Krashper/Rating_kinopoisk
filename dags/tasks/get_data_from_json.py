@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import logging
 
 
 def get_row(movie: dict) -> list:
@@ -30,19 +31,23 @@ def get_row(movie: dict) -> list:
 
 
 def get_data_from_json():
-    with open("dags/data/etl/movie_data.json", encoding="utf-8") as f:
-        data = json.load(f)
+    try:
+        with open("dags/data/etl/movie_data.json", encoding="utf-8") as f:
+            data = json.load(f)
 
-    columns = ["id", "name", "description", "year", "rating", "votes", "movie_length", 
-                "age_rating", "genres", "countries"]
+        columns = ["id", "name", "description", "year", "rating", "votes", "movie_length", 
+                    "age_rating", "genres", "countries"]
 
-    dataset = pd.DataFrame(columns=columns)
+        dataset = pd.DataFrame(columns=columns)
 
-    for movie in data["docs"]:
-        row = get_row(movie)
+        for movie in data["docs"]:
+            row = get_row(movie)
+            
+            dataset.loc[len(dataset.index)] = row
         
-        dataset.loc[len(dataset.index)] = row
-    
-    dataset = dataset.fillna(-1)
+        dataset = dataset.fillna(0)
 
-    dataset.to_csv("dags/data/etl/dataset.csv")
+        dataset.to_csv("dags/data/etl/dataset.csv")
+    
+    except Exception as e:
+        logging.error("Error during getting data from json: ", e)

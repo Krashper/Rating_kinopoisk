@@ -1,0 +1,92 @@
+[2024-07-13T02:29:28.758+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-13T02:29:28.768+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_training_v85.preprocess_data scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-13T02:29:28.773+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_training_v85.preprocess_data scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-13T02:29:28.773+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-13T02:29:28.782+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): preprocess_data> on 2024-07-12 00:00:00+00:00
+[2024-07-13T02:29:28.788+0000] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=666) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-13T02:29:28.789+0000] {standard_task_runner.py:63} INFO - Started process 687 to run task
+[2024-07-13T02:29:28.788+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'model_training_v85', 'preprocess_data', 'scheduled__2024-07-12T00:00:00+00:00', '--job-id', '399', '--raw', '--subdir', 'DAGS_FOLDER/model_training.py', '--cfg-path', '/tmp/tmpt4epmlbq']
+[2024-07-13T02:29:28.790+0000] {standard_task_runner.py:91} INFO - Job 399: Subtask preprocess_data
+[2024-07-13T02:29:28.820+0000] {task_command.py:426} INFO - Running <TaskInstance: model_training_v85.preprocess_data scheduled__2024-07-12T00:00:00+00:00 [running]> on host 0e0c69066946
+[2024-07-13T02:29:28.871+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='model_training_v85' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-12T00:00:00+00:00'
+[2024-07-13T02:29:28.872+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-13T02:29:29.291+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  драма
+[2024-07-13T02:29:29.296+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  комедия
+[2024-07-13T02:29:29.299+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  криминал
+[2024-07-13T02:29:29.303+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  ужасы
+[2024-07-13T02:29:29.306+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  фантастика
+[2024-07-13T02:29:29.309+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  триллер
+[2024-07-13T02:29:29.312+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  семейный
+[2024-07-13T02:29:29.316+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  документальный
+[2024-07-13T02:29:29.319+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  биография
+[2024-07-13T02:29:29.322+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  боевик
+[2024-07-13T02:29:29.325+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  короткометражка
+[2024-07-13T02:29:29.328+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  детектив
+[2024-07-13T02:29:29.331+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  история
+[2024-07-13T02:29:29.334+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  мелодрама
+[2024-07-13T02:29:29.337+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  приключения
+[2024-07-13T02:29:29.340+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  музыка
+[2024-07-13T02:29:29.343+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  военный
+[2024-07-13T02:29:29.346+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  фэнтези
+[2024-07-13T02:29:29.349+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  мюзикл
+[2024-07-13T02:29:29.352+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  концерт
+[2024-07-13T02:29:29.355+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  спорт
+[2024-07-13T02:29:29.358+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  для взрослых
+[2024-07-13T02:29:29.360+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  детский
+[2024-07-13T02:29:29.363+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  реальное ТВ
+[2024-07-13T02:29:29.366+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  церемония
+[2024-07-13T02:29:29.369+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  вестерн
+[2024-07-13T02:29:29.372+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  игра
+[2024-07-13T02:29:29.375+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  новости
+[2024-07-13T02:29:29.378+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  фильм-нуар
+[2024-07-13T02:29:29.381+0000] {logging_mixin.py:188} INFO - Добавлен жанр:  ток-шоу
+[2024-07-13T02:29:29.385+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-13T02:29:29.385+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/tasks/preprocess_data.py", line 157, in preprocess_data
+    get_binary_country(country)
+  File "/opt/airflow/dags/tasks/preprocess_data.py", line 153, in get_binary_country
+    data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/series.py", line 4764, in apply
+    ).apply()
+      ^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1209, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1289, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2926, in pandas._libs.lib.map_infer
+  File "/opt/airflow/dags/tasks/preprocess_data.py", line 153, in <lambda>
+    data.loc[:, country] = data["countries"].apply(lambda x: 1 if country in x else 0)
+                                                                  ^^^^^^^^^^^^
+TypeError: argument of type 'float' is not iterable
+[2024-07-13T02:29:29.395+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=model_training_v85, task_id=preprocess_data, run_id=scheduled__2024-07-12T00:00:00+00:00, execution_date=20240712T000000, start_date=20240713T022928, end_date=20240713T022929
+[2024-07-13T02:29:29.403+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 399 for task preprocess_data (argument of type 'float' is not iterable; 687)
+[2024-07-13T02:29:29.443+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-13T02:29:29.458+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-13T02:29:29.460+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
